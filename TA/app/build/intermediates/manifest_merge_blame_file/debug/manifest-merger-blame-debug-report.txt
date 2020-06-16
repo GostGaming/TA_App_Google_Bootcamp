@@ -1,0 +1,90 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ta"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature
+11-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:4:5-5:36
+12        android:name="android.hardware.camera"
+12-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:4:19-57
+13        android:required="false" />
+13-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:5:9-33
+14    <!-- Only need to request write, read is implied -->
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:7:5-80
+15-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:7:22-78
+16
+17    <application
+17-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:9:5-41:19
+18        android:allowBackup="true"
+18-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:10:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.1] /Users/demo/.gradle/caches/transforms-2/files-2.1/8f8ab13dc8f4e84e14a8bb3d9ac92bc4/core-1.0.1/AndroidManifest.xml:22:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:11:9-43
+22        android:label="@string/app_name"
+22-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:12:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:13:9-54
+24        android:supportsRtl="true"
+24-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:14:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:15:9-40
+27        <activity
+27-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:16:9-25:20
+28            android:name="com.example.ta.ScrollingActivity"
+28-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:17:13-46
+29            android:label="@string/app_name"
+29-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:18:13-45
+30            android:theme="@style/AppTheme.NoActionBar" >
+30-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:19:13-56
+31            <intent-filter>
+31-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:21:17-69
+32-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:23:17-77
+34-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:26:9-30:20
+38            android:name="com.example.ta.StudentActivity"
+38-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:27:13-44
+39            android:label="@string/app_name"
+39-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:28:13-45
+40            android:theme="@style/AppTheme.NoActionBar" >
+40-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:29:13-56
+41        </activity>
+42
+43        <provider
+43-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:31:9-39:20
+44            android:name="androidx.core.content.FileProvider"
+44-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:32:13-62
+45            android:authorities="com.example.ta.fileprovider"
+45-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:33:13-62
+46            android:exported="false"
+46-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:34:13-37
+47            android:grantUriPermissions="true" >
+47-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:35:13-47
+48            <meta-data
+48-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:36:13-38:64
+49                android:name="android.support.FILE_PROVIDER_PATHS"
+49-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:37:17-67
+50                android:resource="@xml/file_paths" />
+50-->/Users/demo/Downloads/TA/app/src/main/AndroidManifest.xml:38:17-51
+51        </provider>
+52    </application>
+53
+54</manifest>
